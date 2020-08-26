@@ -1,0 +1,35 @@
+.searchBar {
+  width: 50%;
+  height: 2rem;
+  background-color: transparent;
+  border-style: none;
+  margin: 10px;
+  color: purple;
+  font-size: large;
+  padding: 5px;
+}
+
+.searchBar:focus {
+  outline-color: darkblue;
+}
+
+.searchBar::placeholder {
+  color: whitesmoke;
+}
+
+.searchBar:hover {
+  border-style: solid;
+  border-color: darkblue;
+}
+
+.searchButton {
+  padding: 10px;
+  font-size: large;
+  background-color: rebeccapurple;
+  border-style: none;
+  color: whitesmoke;
+}
+
+.searchButton:hover {
+  background-color: rgb(57, 29, 85);
+}

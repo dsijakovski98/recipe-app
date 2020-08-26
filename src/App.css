@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+
+.headline {
+  margin: auto;
+  width: 20%;
+  color: whitesmoke;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
