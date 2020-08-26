@@ -11,19 +11,21 @@ export class RecipeList extends Component {
     const { recipes } = this.props;
     return (
       <div>
-        {recipes.length
-          ? recipes.map((r) => {
-              return (
-                <Recipe
-                  key={uuidv4()}
-                  title={r.recipe.label}
-                  ingredients={r.recipe.ingredientLines}
-                  calories={r.recipe.calories}
-                  image={r.recipe.image}
-                ></Recipe>
-              );
-            })
-          : null}
+        {recipes.length ? (
+          recipes.map((r) => {
+            return (
+              <Recipe
+                key={uuidv4()}
+                title={r.recipe.label}
+                ingredients={r.recipe.ingredientLines}
+                calories={r.recipe.calories}
+                image={r.recipe.image}
+              ></Recipe>
+            );
+          })
+        ) : (
+          <h1>No results found.</h1>
+        )}
       </div>
     );
   }
